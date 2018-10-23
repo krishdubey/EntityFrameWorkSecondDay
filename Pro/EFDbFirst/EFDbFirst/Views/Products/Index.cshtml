@@ -1,0 +1,15 @@
+﻿@model  IEnumerable<EFDbFirst.Models.tblProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products List</h2>
+<ol>
+    @foreach(var item in Model)
+    {
+        <li>@Html.ActionLink(item.Name,"Details",new { id = item.ProductId})</li>
+    }
+
+</ol>
+

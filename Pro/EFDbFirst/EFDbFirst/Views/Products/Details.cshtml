@@ -1,0 +1,22 @@
+﻿@model EFDbFirst.Models.tblProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+<table border="1">
+    <tr>
+        <td>Product ID</td>
+        <td>@Model.ProductId</td>
+    </tr>
+    <tr>
+        <td>Product Nmae</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Product Price</td>
+        <td>@Model.Price</td>
+    </tr>
+
+</table>
